@@ -86,6 +86,7 @@ echo cd %MYHOME% >> %FTPTEXT%
 
 rem 既に存在していてもmkdirする、エラーになるだろうけど無視
 echo mkdir %TODAYFOLDER% >> %FTPTEXT%
+echo cd %TODAYFOLDER% >> %FTPTEXT%
 
 rem 一応一覧出しておく
 echo ls >> %FTPTEXT%
