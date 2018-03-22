@@ -183,13 +183,7 @@ echo end >> %TERA_MACROFILE%
 rem ********************************************
 rem  teratermマクロ実行
 rem ********************************************
-rem startじゃないと動かない
-rem TODO：ttpmacro.exeをstartしなくても、%TERA_MACROFILE%だけでも良いのかも？
-start "c:Program Files\teraterm\ttpmacro.exe" %TERA_MACROFILE%
-
-rem startは処理終了を待たないのですぐにdelするワケにはいかない
-rem 泣く泣くpauseしている、本当はpauseなんてしたくない！
-pause
+%TERA_MACROFILE%
 
 rem teratermマクロ削除
 del %TERA_MACROFILE%
